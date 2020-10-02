@@ -1,0 +1,480 @@
+ @charset "utf-8";
+ *{
+	margin: 0;
+	padding: 0;
+ }
+html {
+	height: 100vh;
+}
+body {
+ width: 100%;
+	font-family:  "Helvetica Neue", Arial, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN","Hiragino Sans","メイリオ", "Meiryo", sans-serif;
+	line-height: 1.7;
+	margin: 0 auto;
+	background-image: url(../images/silverwashi_back.jpg);
+  background-attachment: fixed;
+	}
+header h1 {
+	display: none;
+  }
+nav{
+    width: 100%;
+  }
+nav ul{
+    width: 100%;
+  }
+nav ul  li {
+    width: 100%;
+    line-height: 2.5;
+    background-color: #7C6253;
+    list-style-type: none; /*箇条書きのポッチを消す*/
+    text-align: center;
+    border-bottom:  white 3px groove;
+  }
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+   }
+nav a:hover {
+    background-color: #d3ff33;
+   }
+main h1{
+    text-align: center;
+   }
+main section{
+    line-height:1.7;
+    margin: 0;
+    padding: 0 1em;
+    }
+.japan {
+    text-align: center;
+    margin-bottom: 0.5em;
+    }
+.japan figure img{
+      width: 200px;
+      height: 297px;
+      margin-left: auto;
+      margin-right: auto;
+     }
+.japan figure figcaption{
+     width: 200px;
+     margin: 0 auto;
+   }
+.sakushi {
+     width:110px ;
+     display: block;
+     margin: 1em auto;
+    }
+.facebook {
+     width: 180px;
+    display: block;
+    margin: 0 auto;
+    }
+.japan2{
+    float: none;
+   }
+.japan2 dl{
+   display: block;
+   padding: 1em 0;
+   }
+.underline {
+    text-decoration: underline;
+    color: #F00;
+    text-align: center;
+    }
+.korea{
+    line-height: 2.1;
+   }
+.hahanohi{
+    text-align: center;
+   }
+.hahanohi img {
+    width: 320px;
+    margin: 0.7em auto;
+   }
+.book{
+    text-align: center;
+    width: 100%; 
+   }
+.book img{
+     width: 310px;
+    margin: 0.8em auto;
+    outline: solid rgb(1, 71, 36) 1px;
+   }
+.tosho{
+    padding: 0 1em;
+    margin: 0 auto 0 auto;
+    text-align: left; 
+  }
+.tosho a{
+    text-decoration: none;
+   }
+aside{
+    display: none;
+   }
+.crowntokuma{
+    margin: 1em 0 0 0;
+    padding: 0;
+    width:100%;
+    text-align: center;
+   }
+.crowntokuma img{
+     width: 100vh;
+     margin-left: auto;
+     margin-right: auto;
+   }
+footer{
+    padding: 1em;
+    text-align: center;
+   }
+/* ------------------------------------------------*/
+@media only screen and (min-width:480px){
+
+nav ul{
+     display: inline-flex;
+   }
+nav ul  li {
+      padding:  0;
+      border-bottom: #FF9933 3px solid;
+    }
+nav ul li a{
+      line-height: 3em;
+    }
+.hahawoshitai{
+      display: none; /*menu*/
+    }
+nav a:hover {
+        background-color: #FF9933;
+   }
+.japan{
+    width: 225px;
+     float: right;
+   }
+.japan figure figcaption{
+  background-color: orange;
+   }
+.japan2{
+     margin-top: 17em;
+     float: none;
+     margin-left: auto;
+     margin-right: auto;
+   }
+.news{
+   display: block;
+    width:247px;
+    height: 230px;
+    font-size: 15px;
+    position: absolute;
+    left: 1em;
+    top:120px;
+    text-align: center;
+    border: 1px dashed #F0F;
+    background-image: linear-gradient(180deg, #DA70D6, #FFFF66);
+   }
+.news p{
+   display: block;
+   width: 246px;
+   padding: 0.5em;
+   color: #FFF;
+   font-weight: bold;
+   font-stretch: expanded;
+  }
+.news a{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.news a:hover{
+      opacity: 0.1;
+      }
+.news img{
+        margin: 3em auto 0 auto;
+        }
+.box2{
+     display: flex;
+     justify-content: space-around;
+     text-align: center;
+   }
+.hahanohi{
+  margin-left:1em;
+}
+.book img{
+    width: 200px;
+    margin-bottom: 7em;
+   }
+aside{
+    display: block;
+    margin-left: 2em;
+    margin-top:-13em;
+  }
+aside ul li{
+  list-style-type: none;
+  line-height: 2em;
+  }
+aside ul li a{
+  text-decoration: none;
+  color: #9a6580;
+ }
+.sidem{
+    display: initial;
+  }
+blockquote{
+  display: none;
+}
+.tosho{
+  display: none;
+}
+.lanking{
+  display: flex;
+  justify-content: center;
+  margin-top:0;
+}
+.twitter{
+  display: none;
+ }
+}
+@media only screen and (min-width:640px){
+body{
+    width:637px;
+    position: relative;
+    border-right-width: 1px; 
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #36455A;
+    border-left-color: #36455A;
+  }
+nav ul li{
+		width: 100%;
+		background-color:rgb(14, 134, 74);
+		 }
+.news{
+  width: 340px;
+    }
+.news p{
+  width: 340px;
+  padding: 0.5em auto;
+  color: #FFF;
+      }
+.japan figure figcaption{
+    background-color: yellow;
+   }
+.japan2 p{
+  display: block;
+  width: auto;
+  margin: 0 auto;
+}
+.hahanohi{
+  margin-left: 2em;
+}
+.book img{
+  width: 220px;
+   }
+.flex{
+ width: 640px;
+ margin-left: auto;
+ margin-right: auto;
+ }
+.sidem{
+  position: absolute;
+  bottom: 320px;
+ }
+.sidemenu a:hover{
+  background-color: #04811f;
+  color: #fff;
+ }
+.tosho{
+  display: none;
+ }
+.lanking{
+ justify-content: left;
+ padding-bottom: 2em;
+ }
+aside{
+  margin-top: -15em;
+  margin-bottom:8em;
+}
+blockquote{
+  display: none;
+}
+ }
+
+@media only screen and (min-width:960px){
+body{
+  width:963px;
+  position: relative;
+  }
+header {
+  height: 485px;
+  background-image: url(../images/sakura.jpg);
+   background-position: top;
+  position: relative;
+  }
+nav{
+  position: absolute;
+	bottom: 0;
+	padding: 0;
+	margin: 0;
+ }
+nav ul li {
+  background-color: #858794;
+  line-height: 3em;
+  border-bottom:  #d5a4f1 3px solid;
+  }
+.hahawoshitai{
+  display: initial;
+  }
+nav a:hover{
+  background-color: mediumpurple;
+  color: #FFF;
+  }
+.flex{
+  width: 956px;
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding-left: auto;
+  padding-right: auto;
+    }
+main {
+ width:650px;
+ padding-left: 1.5em;
+ margin-left:2em;
+  }
+main h1{
+ display: block;
+ margin-top: 1em;
+ margin-bottom: 1em;
+ width: 310px;
+ font-size: 1.5em;
+ }
+.japan figure figcaption{
+   background-color: #66ffab;
+     }
+.japan2{
+  margin: 0;
+}
+aside{
+  display: block;
+  width: 270px;
+  height: 100vh;
+  margin-left:1em;
+  margin-top:0;
+ }
+aside ul li{
+  display: block;
+  padding: 0;
+  margin: 0.5em 0;
+  line-height: 3em;
+ }
+aside ul li a{
+   padding-left:1em;
+   margin: 0;
+   display: block;
+   color: #9a6580; 
+  }
+aside ul a:hover{
+   background-color: mediumpurple;
+   color: #FFF;
+ }
+.sidem{
+  position: unset;
+}
+.sidemenu{
+  display: block;
+  line-height:3em;
+  background-color: lightgray;
+ }
+.mahorobo{
+  line-height: 2em;
+}
+.mahorobo a:hover{
+  background-color: mediumseagreen;
+}
+.news{
+  width: 266px;
+  height: 200px;
+  position:unset;
+  display: block;
+  border: 1px dashed #F0F;
+  background-image: linear-gradient(180deg, #DA70D6, #FFFF66);
+  color: #888888;
+  text-align: center;
+  font-size: 16px;
+  margin: 0.5em 0;
+  padding: 0 auto;
+ }
+.news p{
+  width: inherit;
+  text-align: center;
+ }
+.news a{
+  margin: -3em 0 0 0;
+ }
+.tosho{
+  display: block;
+  width:265px;
+  height: auto;
+  padding:0.4em 0 0.4em 0.7em;
+  margin: 0;
+  background-color:#858794;
+  text-align: left;
+  }
+.tosho a{
+  color: #fff;
+  font-size: 15px;
+  font-stretch:condensed;
+  text-decoration: none;
+ }
+.tosho:hover{
+   background-color: rgb(94, 177, 12);
+   color: #000;
+ }
+blockquote{
+  display: block;
+  margin-top: 2em;
+}
+.lanking{
+display: flex;
+justify-content: center;
+}
+.ongakulank{
+  display:block;
+  margin:0;
+  padding: 0;
+   }
+.enkalank{
+  display:block;
+  margin:0;
+  padding: 0;
+    }
+.twitter{
+  display:block;
+  text-align: center;
+  margin-top:7em;
+   }
+.twitter img{
+  width: 75%;
+  margin: 2em auto 0 auto;
+   }
+.crowntokuma{
+  margin:0 auto;
+  padding: 0 auto;
+  }
+.crowntokuma img{
+  width:100%;
+}
+footer {
+    height: auto;
+    width: auto;
+    background-color: #886061;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 0;
+    margin: 0px auto;
+    color: #FFF;
+    }
+ }
+  /* -------------------------------------------- */

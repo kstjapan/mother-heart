@@ -1,0 +1,362 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+ }
+html{
+	 height: 100vh;
+ }
+body {
+	font-family:  "Helvetica Neue", Arial, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN","Hiragino Sans","メイリオ", "Meiryo", sans-serif;
+	line-height: 1.7;
+	margin: 0 auto;
+	background-image: url(../images/silverwashi_back.jpg);
+	background-attachment: fixed;
+ }
+header h1 {
+	display:none ;
+	}
+nav{
+    width: 100%;
+  }
+nav ul{
+    width: 100%;
+  }
+nav ul  li {
+    width: 100%;
+    line-height: 2.5;
+    background-color: #7C6253;
+    list-style-type: none; /*箇条書きのポッチを消す*/
+    text-align: center;
+    border-bottom:  white 3px groove;
+  }
+ nav ul li a{
+    text-decoration: none;
+    color: white;
+		display: block;
+   }
+nav a:hover {
+    background-color: #d3ff33;
+   }
+.link ul{
+	display: none;
+}
+.flex{
+	margin-left: auto;
+	margin-right: auto;
+}
+main{
+ margin:0;
+ padding:0 1em;
+}
+main ol{
+	margin-left: 1em;
+}
+main h1{
+	text-align: center;
+   }
+h3{
+	font-size:17px;
+}
+ aside{
+    display: none;
+   }
+ footer{
+    padding: 1em;
+    text-align: center;
+	 }
+ /* ------------------------------------------------*/
+@media only screen and (min-width:480px){
+nav ul{
+	display:inline-flex;
+	width:100%;
+   }
+nav ul li{
+	width: 100%;
+	padding:0;
+	background-color: lightcoral;
+  border-bottom: #33ff8f 3px solid;
+    }
+nav ul li a{
+  line-height: 3em;
+    }
+.hahawoshitai{
+    display: none; /*menu*/
+    }
+ nav a:hover {
+    background-color: #48f39d;
+	}
+.link{
+	position: relative;
+	 }
+.link ul{
+	display: block;
+	position:absolute;
+	bottom: -4.9rem;
+	left: -1em;
+	 }
+.link ul li{
+	background-color: orchid;
+	height: 4rem;
+	outline:solid rgba(253,244,13,1.00);
+	border-bottom: none;
+	 }
+.link ul li a{
+	display: block;
+	line-height:1.4em;
+	padding-top:0.2em;
+	font-size: 1.3em;
+	 }
+.flex{
+ width: 478px;
+ margin: 0;
+ padding: 0;
+	 }
+main{
+ width:478px;
+ margin: 0 auto;
+	 }
+main h1{
+	text-align: center;
+}
+main ol li{
+	padding-left: 1em;
+}
+ aside{
+  display:none;
+	 }
+ }
+@media only screen and (min-width:640px){
+ body{
+    width:637px;
+    position: relative;
+    border-right-width: 1px;
+    border-left-width: 1px;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-right-color: #36455A;
+    border-left-color: #36455A;
+	}
+nav ul li{
+	width: 100%;
+	background-color:rgb(14, 134, 74);
+	 }
+.link ul{
+	bottom: -6.5rem;
+	left: -1em;
+	 }
+.link ul li{
+	height: 5rem;
+	 }
+.link ul li a{
+	display: block;
+	line-height:1.5em;
+	padding-top:0.2em;
+	font-size: 1.6em;
+	 }
+.flex{
+	margin:0 auto;
+	padding: 0 auto;
+}
+main{
+	width:100%;
+	margin:0 auto;
+	padding: 0 auto;
+	text-align: left;
+	}
+main h1{
+	text-align: center;
+		}
+main p{
+	display: block;
+	width: 400px;
+	margin:0 auto;
+	padding: 0 auto;
+	}
+aside{
+	display: none;
+ }
+}
+@media only screen and (min-width:960px){
+ body {
+	width: 958px;
+	position: relative;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #36455A;
+	border-left-color: #36455A;
+
+ }
+ header {
+	height: 482px;
+	background-image: url(../images/cosumosu.jpg);
+  background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: top;
+	position: relative;
+ }
+ nav {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	padding: 0;
+	margin: 0 auto;
+ }
+ nav ul {
+	width: 100%;
+	list-style-type: none; /*箇条書きのポッチを消す*/
+	text-align:center /*左右中央寄せは親要素に対して指定*/
+  }
+ nav ul li {
+	display: inline-block;
+	padding: 0; /*余白も指定できる*/
+	vertical-align: middle; /*縦の表示位置も指定できる*/
+	background-color: rgb(241, 161, 237);
+	border-bottom: rgb(153, 14, 130) 3px solid;
+	line-height: 3em;
+    }
+ nav a {
+	display: block;
+	padding:0;/*余白も指定できる*/
+	color: #FFF;
+	text-decoration: none;
+	text-align: center;
+    }
+ nav a:hover {
+	color: #FFF;
+	background-color: rgb(153, 14,130);
+	}
+.hahawoshitai{
+	display: initial;
+	}
+.link ul{
+	display: none;
+	 }
+.flex{
+	width: 960px;
+	display:flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding-left: auto;
+	padding-right: auto;
+ }
+main {
+	width: 630px;
+	margin:0 auto;
+		}
+aside{
+	display: block;
+  width: 270px;
+	margin-left: 1em;
+	position: relative;
+ }
+.side1{
+	display: block;
+ }
+.side1 ul li{
+  display: block;
+  padding: 0;
+  margin: 0.5em 0;
+	line-height: 3em;
+	background-color: #762c53;
+ }
+.side1 li a{
+	display: block;
+	padding-left: 1em;
+	color: #fff;
+	text-decoration: none;
+	 }
+.sidemenu a:hover{
+	color: #fff;
+	background-color: #FF9933;
+	 }
+.tosho {
+	display: block;
+	width: 265px;
+	height: auto;
+	padding:0.4em 0 0.4em 0.7em;
+	margin-bottom: 1em;
+	background-color:#858794;
+	text-align: left;
+		}
+.tosho a{
+			color: #fff;
+			font-size: 15px;
+			font-stretch:condensed;
+			text-decoration: none;
+		 }
+.tosho:hover{
+			 background-color: rgb(94, 177, 12);
+			 color: #000;
+		 }
+.news{
+		 display: block;
+		 width:266px;
+		 height: 256px;
+		 font-size: 18px;
+		 position: absolute;
+		 left: 0;
+		 top:460px;
+		 text-align: center;
+		 border: 1px dashed #F0F;
+		 background-image: linear-gradient(180deg, #DA70D6, #FFFF66);
+		 z-index: 2;
+		}
+.news p{
+		display: block;
+		width: 266px;
+		height: 256px;
+		padding: 0.5em;
+		color: #FFF;
+		font-weight: bold;
+		font-stretch: expanded;
+	 }
+.news a{
+	 display: block;
+	 margin: -3em auto 0 auto;
+ }
+ .news a:hover{
+		opacity: 0.1;
+			 }
+.news img{
+	margin: 3em auto 0 auto;
+ }
+.book{
+	width: 266px;
+	display: block;
+	position: absolute;
+	top: 738px;
+	left:0.4em;
+	text-align: center;
+}
+.book img{
+	height: auto;
+	width: 222px;
+	margin-left: auto;
+	margin-right:auto;
+ }
+.box2{
+	display: flex;
+	justify-content: center;
+}
+.ongakulank{
+  display: blockl;
+   }
+.enkalank{
+  display: block;
+	margin-bottom: 1em;
+		}
+footer {
+	height: auto;
+	width: auto;
+	background-color: #886061;
+	text-align: center;
+	vertical-align: middle;
+	padding: 10px 0;
+	margin: 0px auto;
+	color: #FFF;
+ }
+}/* min-width:960px*/
